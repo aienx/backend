@@ -5,13 +5,83 @@
 
 Collection of backend projects. To present backend and techiques skills in backend developement.
 
-## Project 1: URL rig
+# Project 1: URL Shortening / Flask python
 
 ![Project Name](https://github.com/aienx/frontend/blob/main/presby)
 
-Description: Website built for Akuapem Presbytery Organization.
+This is a URL shortening web application built with Python Flask. It utilizes the Bitly API for shortening long URLs.
 
+## Features
+
+- Shorten long URLs to compact, easy-to-share links.
+- Track click statistics for each shortened link.
+- Easy-to-use web interface.
+
+## Technologies Used
+
+- Python Flask: A micro web framework for building web applications in Python.
+- Bitly API: A URL shortening service that provides an API for programmatic access.
+
+## Setup Instructions
+
+1. Clone the repository:
+   ```shell
+   git clone https://github.com/your-username/url-shortener.git
+   ```
+2. Install the required dependencies:
+    pip install -r requirements.txt
+    
+3. Obtain a Bitly API key by signing up for an account at Bitly and create a new application to get the API key.
+
+4. Update the configuration file with your Bitly API key:
+    config.py
+    BITLY_API_KEY = 'your-api-key'
+5. Start the Flask development server:
+    flask run
+6. Open your web browser and navigate to http://localhost:5000 to access the web application.
+7.
 [View Project](link-to-project1)
+
+# API Endpoints
+The web application provides the following API endpoints:
+
+## Shorten URL
+
+ - URL: /api/shorten
+
+ - Method: POST
+
+ - Request Payload:
+ ```
+  {
+    "url": "https://www.example.com/very-long-url-with-lots-of-characters"
+  } 
+  ```
+## Response
+ ```
+ {
+    "original_url": "https://www.example.com/very-long-url-with-lots-of-characters",
+    "shortened_url": "https://bit.ly/abcd123",
+    "clicks": 0
+  }
+  ```
+  
+## Click Statistics
+  URL: /api/stats/<shortened_url_id>
+
+  Method: GET
+
+  Response:
+  ```
+  {
+    "original_url": "https://www.example.com/very-long-url-with-lots-of-characters",
+    "shortened_url": "https://bit.ly/abcd123",
+    "clicks": 10
+}
+```
+
+# License
+ This project is licensed under the MIT License. See the LICENSE file for more details.
 
 ## Project 2: Personal Project ( 3D Shop v1 )
 
