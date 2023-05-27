@@ -1,0 +1,1 @@
+{"id":"9e9c8450-641c-42a3-944c-53393779f8a8","space":45456,"runtime":"python3.9","name":"urlrig","path":"4xem1x","project":"a0374iud","account":"144798365827","region":"eu-central-1","deps":["flask","flask-migrate","flask-sqlalchemy","psycopg2-binary","gunicorn","python-decouple","pyshorteners"],"envs":null,"public":true,"log_level":"debug","cron":""}

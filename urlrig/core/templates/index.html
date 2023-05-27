@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+
+<head>
+    <meta charset="utf-8" />
+    <title>URL Shortener | ur.ly</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="og:title" content="">
+    <meta name="og:description" content="">
+    <meta property="og:image" content="" />
+    <link href='../static/favicon.ico' type='image/x-icon' rel='icon' />
+    <link href='../static/favicon.ico' type='image/x-icon' rel='shortcut icon' />
+    <link rel="stylesheet" href="../static/vendor/bootstrap/css/bootstrap.min9d52.css?ver=3.5.1" />
+    <link rel="stylesheet" href="../static/vendor/font-awesome/css/font-awesome.min9d52.css?ver=3.5.1" />
+    <link rel="stylesheet" href="../static/vendor/animate.min9d52.css?ver=3.5.1" />
+    <link rel="stylesheet" href="../static/vendor/owl/owl.carousel.min9d52.css?ver=3.5.1" />
+    <link rel="stylesheet" href="../static/vendor/owl/owl.theme.default9d52.css?ver=3.5.1" />
+    <link rel="stylesheet" href="../static/css/front9d52.css?ver=3.5.1" />
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,900' rel='stylesheet' type='text/css'>
+    <script type="074488aa570ecc1a3c8e922c-text/javascript">
+    if (window.self !== window.top) {
+        window.top.location.href = window.location.href;
+    }
+</script>
+</head>
+
+<body id="page-top" class="index home">
+
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand " href="{{ url_for('index')}}">Ur.ly URL Shortener</a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="{{ url_for('index')}}">Home</a>
+                    </li>
+                    <li>
+                        <a href="{{ url_for('terms')}}">Terms of Use</a>
+                    </li>
+                    <li>
+                        <a href="{{ url_for('privacy')}}">Privacy Policy</a>
+                    </li>
+                    <li class="dropdown language-selector">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                            aria-expanded="false"><i class="fa fa-language"></i> <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="index380c.html?lang=en_US">English (United States)</a></li>
+                            <li><a href="index28e9.html?lang=fr_FR">français (France)</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+    </nav>
+
+    <header class="shorten">
+        <div class="container">
+            <div class="intro-text">
+                <div class="intro-heading wow zoomIn" data-wow-delay=".3s">Ur.ly url Shortener</div>
+                <div class="row">
+                    <div class="col-sm-8 col-sm-offset-2">
+                        <form method="post" accept-charset="utf-8" id="shorten" class="form-inline"
+                            action="{{ url_for('index')}}">
+                            <div style="display:none;">
+                                <input type="hidden" name="_method" value="POST" />
+                                <input type="hidden" name="_csrfToken" autocomplete="off"
+                                    value="ea9408e83b9f94264fec76c2618cfae3c61440c65335ce4a2bf521727251dd98223aaeac8bfab3c89b0057cdf7a882f6a757d7f614c67509e6e58a4697440e9e" />
+                            </div>
+                            <div class="form-group">
+                                <input type="text" name="url" placeholder="Your URL Here" required="required"
+                                    class="form-control input-lg" id="url" />
+                                <input type="hidden" name="type" value="2" />
+                                <button class="btn-captcha" id="invisibleCaptchaShort" type="submit"><img
+                                        src="../static/img/Right-Arrow.png" alt="" /></button>
+                            </div>
+
+                            <div class="form-group captcha" style="display: none">
+                                <div id="captchaShort" style="display: inline-block;"></div>
+                            </div>
+                            <div style="display:none;"><input type="hidden" name="_Token[fields]" autocomplete="off"
+                                    value="4917082ba136159aaf69a61af92e3ab85e8dd4f9%3Atype" /><input type="hidden"
+                                    name="_Token[unlocked]" autocomplete="off"
+                                    value="adcopy_challenge%7Cadcopy_response%7Ccaptcha_code%7Ccaptcha_namespace%7Cg-recaptcha-response" />
+                            </div>
+                        </form>
+                        <p>Short link ↓ </p>
+                        {%  if short_url %}
+                        <div class="shorten add-link-result">                
+                            <p>{{ short_url }}</p>
+                        </div>
+                        {%  endif %}
+                    </div>
+                </div>
+
+                <div class="slogan">
+                    Ur.ly is free link shortening service to all internet users . The app squeezes 
+                    long urls into fewer characters which can be easily used and shared over the internet.</div>
+            </div>
+        </div>
+    </header>
+    <section id="features" class="home">
+        <div class="container">
+            <div class="section-heading wow bounceIn">
+                <h1>Features</h1>
+                <div class="divider"></div>
+                <p>All Amazing Features</p>
+            </div>
+            <div class="row">
+                <div class="col-sm-3 col-xs-12">
+                    <div class="about-item wow fadeInLeft" data-wow-delay="0.9s">
+                        <i class="fa fa-file-o fa-2x"></i>
+                        <h3>Custom Redirect Page</h3>
+                        <p>You can custom you redirect page to feel like your website by adding your logo and colors.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-sm-3 col-xs-12">
+                    <div class="about-item wow fadeInLeft" data-wow-delay="0s">
+                        <i class="fa fa-lock fa-2x"></i>
+                        <h3>Password Protect</h3>
+                        <p>Set a password to protect your links from unauthorized access.</p>
+                    </div>
+                </div>
+                <div class="col-sm-3 col-xs-12">
+                    <div class="about-item wow fadeInLeft" data-wow-delay="0.6s">
+                        <i class="fa fa-file-text-o fa-2x"></i>
+                        <h3>Unlimited Pages</h3>
+                        <p>You can easily add Unlimited pages easily from the admin area.</p>
+                    </div>
+                </div>
+                <div class="col-sm-3 col-xs-12">
+                    <div class="about-item wow fadeInLeft" data-wow-delay="0.9s">
+                        <i class="fa fa-list fa-2x"></i>
+                        <h3>Display Website Articles</h3>
+                        <p>Connect your website with the custom redirect page by displaying your articles.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="stats" class="home">
+        <div class="container">
+            <div class="section-heading wow bounceIn">
+                <h1>Stats</h1>
+                <div class="divider"></div>
+                <p>Check Our Statistics</p>
+            </div>
+            <div class="row">
+                <div class="col-sm-4 text-center wow flipInY">
+                    <i class="fa fa-link fa-2x"></i>
+                    <span class="display-counter">14,374</span>
+                    <span>Total Clicks</span>
+                </div>
+                <div class="col-sm-4 text-center wow flipInY">
+                    <i class="fa fa-bar-chart-o fa-2x"></i>
+                    <span class="display-counter">1</span>
+                    <span>Total URLs</span>
+                </div>
+                <div class="col-sm-4 text-center wow flipInY">
+                    <i class="fa fa-users fa-2x"></i>
+                    <span class="display-counter">3</span>
+                    <span>Registered Users</span>
+                </div>
+            </div>
+        </div>
+    </section>
+   
+    <section id="contact" class="home">
+        <div class="container">
+            <div class="section-heading wow bounceIn">
+                <h1>Contact Us</h1>
+                <div class="divider"></div>
+                <p>Get in touch</p>
+            </div>
+            <form method="post" accept-charset="utf-8" id="contact-form"
+                action="{{ url_for('index')}}">
+                <div style="display:none;"><input type="hidden" name="_method" value="POST" /><input type="hidden"
+                        name="_csrfToken" autocomplete="off"
+                        value="ea9408e83b9f94264fec76c2618cfae3c61440c65335ce4a2bf521727251dd98223aaeac8bfab3c89b0057cdf7a882f6a757d7f614c67509e6e58a4697440e9e" />
+                </div>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="form-group wow fadeInUp">
+                            <input type="text" name="name" placeholder="Your Name *" required="required"
+                                class="form-control" id="name" />
+                            <p class="help-block text-danger"></p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="form-group wow fadeInUp">
+                            <input type="text" name="email" placeholder="Your Email *" required="required"
+                                class="form-control" id="email" />
+                            <p class="help-block text-danger"></p>
+                        </div>
+                    </div>
+                    <div class="col-sm-12">
+                        <div class="form-group wow fadeInUp">
+                            <input type="text" name="subject" placeholder="Your Subject *" required="required"
+                                class="form-control" id="subject" />
+                            <p class="help-block text-danger"></p>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 wow fadeInUp">
+                        <div class="form-group">
+                            <textarea name="message" placeholder="Your Message *" required="required"
+                                class="form-control" id="message" rows="5"></textarea>
+                            <p class="help-block text-danger"></p>
+                        </div>
+                        <div class="form-group">
+                            <input type="hidden" name="accept" value="0" /><label for="accept"><input type="checkbox"
+                                    name="accept" value="1" required="required" id="accept"><b>I consent to having this
+                                    website store my submitted information so they can respond to my inquiry</b></label>
+                        </div>
+                    </div>
+                </div>
+                <div class="wow fadeInUp">
+                    <div class="form-group captcha">
+                        <div id="captchaContact" style="display: inline-block;"></div>
+                    </div>
+                </div>
+                <div class="text-center wow fadeInUp">
+                    <div id="success"></div>
+                    <button class="btn btn-primary btn-captcha btn-lg pull-right" id="invisibleCaptchaContact"
+                        type="submit"><i class="fa fa-paper-plane"></i> Send Message</button>
+                </div>
+                <div style="display:none;"><input type="hidden" name="_Token[fields]" autocomplete="off"
+                        value="632a2c632c31126c40bb3ec8ec488a09a7fb24d2%3A" /><input type="hidden"
+                        name="_Token[unlocked]" autocomplete="off"
+                        value="adcopy_challenge%7Cadcopy_response%7Cg-recaptcha-response" /></div>
+            </form>
+            <div class="contact-result"></div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="social-links">
+                        <a href="#" target="_blank">
+                            <i class="fa fa-facebook"></i>
+                        </a>
+                        <a href="#" target="_blank">
+                            <i class="fa fa-twitter"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="bottom-menu">
+                        <ul class="list-inline">
+                            <li><a href="{{ url_for('index')}}">Home</a></li>
+                            <li><a href="{{ url_for('terms')}}">Terms of Use</a></li>
+                            <li><a href="{{ url_for('privacy')}}">Privacy Policy</a>
+                            </li>
+                            <li><a href="dmca.html">DMCA</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright text-center">
+                Copyright &copy; ByteKov.io Ur.ly </div>
+        </div>
+    </footer>
+    <script src="../static/vendor/jquery.min9d52.js?ver=3.5.1" type="074488aa570ecc1a3c8e922c-text/javascript"></script>
+    <script src="../static/vendor/bootstrap/js/bootstrap.min9d52.js?ver=3.5.1"
+        type="074488aa570ecc1a3c8e922c-text/javascript"></script>
+    <script src="../static/vendor/owl/owl.carousel.min9d52.js?ver=3.5.1" type="074488aa570ecc1a3c8e922c-text/javascript"></script>
+    <script src="../static/vendor/wow.min9d52.js?ver=3.5.1" type="074488aa570ecc1a3c8e922c-text/javascript"></script>
+    <script src="../static/js/front9d52.js?ver=3.5.1" type="074488aa570ecc1a3c8e922c-text/javascript"></script>
+    <!--<script src="../static/js/app9d52.js?ver=3.5.1" type="074488aa570ecc1a3c8e922c-text/javascript"></script>-->
+    <script src="../www.recaptcha.net/recaptcha/api067c.js?onload=onloadRecaptchaCallback&amp;render=explicit" async
+        defer type="074488aa570ecc1a3c8e922c-text/javascript"></script>
+    <script src="../static/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js"
+        data-cf-settings="074488aa570ecc1a3c8e922c-|49" defer=""></script>
+</body>
+
+</html>
