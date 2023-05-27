@@ -1,13 +1,13 @@
-<h1 align="center">Backend Archive </h1>
+<h1 align="center">Backend / APi Archive </h1>
 
 <h3 align="center">Tools:</h3>
 <p align="center"> <a href="https://getbootstrap.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-plain-wordmark.svg" alt="bootstrap" width="40" height="40"/> </a> <a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40"/> </a> <a href="https://git-scm.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="40" height="40"/> </a> <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/> </a> <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/> </a> <a href="https://www.linux.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg" alt="linux" width="40" height="40"/> </a> <a href="https://www.mysql.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg" alt="mysql" width="40" height="40"/> </a> <a href="https://www.python.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/> </a> <a href="https://reactjs.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="react" width="40" height="40"/> </a> </p>
 
-Collection of backend projects. To present backend and techiques skills in backend developement.
+Collection of backend and api project documentation presents some  backend and and api skills in backend dev.
 
 # Project 1: URL Shortening / Flask python
 
-![Project Name](https://github.com/aienx/frontend/blob/main/presby)
+![Project Name](https://github.com/aienx/frontend/blob/main/url.png)
 
 This is a URL shortening web application built with Python Flask. It utilizes the Bitly API for shortening long URLs.
 
@@ -85,16 +85,48 @@ The web application provides the following API endpoints:
 
 ## Project 2: Personal Project ( 3D Shop v1 )
 
-![Project Name](https://github.com/aienx/frontend/blob/main/3d.)
+![Project Name](https://github.com/aienx/frontend/blob/main/blog.png)
 
-Description: A 3d printing shop website that showcases and markets their services
+# Blog Website
 
-[View Project](link-to-project2)
+This is a simple blog website built with Python Flask and a personal API created using the npoint platform.
 
-## Project 3: Personal Project ( Hair Force )
+## Installation
 
-![Project Name](https://github.com/aienx/frontend/blob/main/hair)
+1. Clone the repository: `git clone https://github.com/username/blog-website.git`
+2. Navigate to the project directory: `cd blog-website`
+3. Install the required dependencies: `pip install -r requirements.txt`
 
-Description: A barber hair service website to market their services
+## Usage
 
-[View Project](link-to-project3)
+1. Set up the environment variables required for the Flask application.
+2. Run the Flask application: `python app.py`
+3. Open your web browser and visit `http://localhost:5000` to access the blog website.
+
+## Features
+
+- User registration and authentication system.
+- Create, read, update, and delete blog posts.
+- Display a list of blog posts with pagination.
+- View individual blog posts and leave comments.
+- API endpoints for accessing blog posts and comments.
+
+## API Documentation
+
+For detailed API documentation, please refer to the [API Documentation](api-docs.md) file.
+
+## Technologies Used
+
+- Python
+- Flask
+- npoint (for creating the personal API)
+- HTML/CSS
+- JavaScript
+
+## Contributing
+
+Contributions are welcome! If you'd like to contribute to the project, please follow the guidelines in [CONTRIBUTING.md](CONTRIBUTING.md).
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
