@@ -7,7 +7,7 @@ Collection of backend projects. To present backend and techiques skills in backe
 
 # Project 1: URL Shortening / Flask python
 
-![Project Name](https://github.com/aienx/frontend/blob/main/presby)
+![Project Name](https://github.com/aienx/frontend/blob/main/url.png)
 
 This is a URL shortening web application built with Python Flask. It utilizes the Bitly API for shortening long URLs.
 
@@ -85,16 +85,49 @@ The web application provides the following API endpoints:
 
 ## Project 2: Personal Project ( 3D Shop v1 )
 
-![Project Name](https://github.com/aienx/frontend/blob/main/3d.)
+![Project Name](https://github.com/aienx/frontend/blob/main/blog.png)
 
-Description: A 3d printing shop website that showcases and markets their services
+# Blog Website
 
-[View Project](link-to-project2)
+This is a simple blog website built with Python Flask and a personal API created using the npoint platform.
 
-## Project 3: Personal Project ( Hair Force )
+## Installation
 
-![Project Name](https://github.com/aienx/frontend/blob/main/hair)
+1. Clone the repository: `git clone https://github.com/username/blog-website.git`
+2. Navigate to the project directory: `cd blog-website`
+3. Install the required dependencies: `pip install -r requirements.txt`
 
-Description: A barber hair service website to market their services
+## Usage
 
-[View Project](link-to-project3)
+1. Set up the environment variables required for the Flask application.
+2. Run the Flask application: `python app.py`
+3. Open your web browser and visit `http://localhost:5000` to access the blog website.
+
+## Features
+
+- User registration and authentication system.
+- Create, read, update, and delete blog posts.
+- Display a list of blog posts with pagination.
+- View individual blog posts and leave comments.
+- API endpoints for accessing blog posts and comments.
+
+## API Documentation
+
+For detailed API documentation, please refer to the [API Documentation](api-docs.md) file.
+
+## Technologies Used
+
+- Python
+- Flask
+- npoint (for creating the personal API)
+- HTML/CSS
+- JavaScript
+
+## Contributing
+
+Contributions are welcome! If you'd like to contribute to the project, please follow the guidelines in [CONTRIBUTING.md](CONTRIBUTING.md).
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
+
