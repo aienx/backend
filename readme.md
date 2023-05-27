@@ -7,7 +7,7 @@ Collection of backend and api project documentation presents some  backend and a
 
 # Project 1: URL Shortening / Flask python
 
-![Project Name](https://github.com/aienx/frontend/blob/main/url.png)
+![Project Name](https://github.com/aienx/backend/blob/main/url.png)
 
 This is a URL shortening web application built with Python Flask. It utilizes the Bitly API for shortening long URLs.
 
@@ -85,7 +85,7 @@ The web application provides the following API endpoints:
 
 ## Project 2: Personal Project ( 3D Shop v1 )
 
-![Project Name](https://github.com/aienx/frontend/blob/main/blog.png)
+![Project Name](https://github.com/aienx/backend/blob/main/blog.png)
 
 # Blog Website
 
