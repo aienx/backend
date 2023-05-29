@@ -14,7 +14,7 @@ Collection of backend and api projects to demonstrate skill sets, knowledge and 
 - Web framworks: web frameworks skillsets including Flask, Django, and React, with demonstrated experience in building scalable and efficient web 
   applications, utilizing advanced features and integrations, and leveraging powerful tools and libraries within each framework.
   <br>
-  [Frameworks Prjs →](https://github.com/aienx/python-archive)
+  [Frameworks Prjs →](./frameworks.md)
 - Database: database development, DBMS (MySQL, PostgreSQL, Oracle).
 - Restful APi's: Developing intuitive and well-structured APIs, documenting, integrating with third-party APIs, implementing API security measures,
   managing API versioning effectively, optimizing API performance, monitoring and analyzing API usage, and providing real-world examples of API projects.
