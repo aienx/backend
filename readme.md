@@ -3,26 +3,52 @@
 <h3 align="center">Tools:</h3>
 <p align="center"> <a href="https://getbootstrap.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-plain-wordmark.svg" alt="bootstrap" width="40" height="40"/> </a> <a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40"/> </a> <a href="https://git-scm.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="40" height="40"/> </a> <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/> </a> <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/> </a> <a href="https://www.linux.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg" alt="linux" width="40" height="40"/> </a> <a href="https://www.mysql.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg" alt="mysql" width="40" height="40"/> </a> <a href="https://www.python.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/> </a> <a href="https://reactjs.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="react" width="40" height="40"/> </a> </p>
 
-Collection of backend and api project documentation presents some  backend and and api skills in backend dev.
+Collection of backend and api projects to demonstrate skill sets, knowledge and problem solving scenarios.
 
-# Project 1: URL Shortening / Flask python
+## Contents
+
+- Programming language: proficient in Python language, web frameworks (such as Django and Flask), web scraping, data analysis, machine learning,
+  scripting and automation, API development, testing and debugging, database integration, collaboration using version control, and problem-solving.
+  <br>
+  [Python Archive →](https://github.com/aienx/python-archive)
+- Web framworks: web frameworks skillsets including Flask, Django, and React, with demonstrated experience in building scalable and efficient web 
+  applications, utilizing advanced features and integrations, and leveraging powerful tools and libraries within each framework.
+- Database: database development, DBMS (MySQL, PostgreSQL, Oracle).
+  <br>
+  [Frameworks Prjs →](https://github.com/aienx/python-archive)
+- Restful APi's: Developing intuitive and well-structured APIs, documenting, integrating with third-party APIs, implementing API security measures,
+  managing API versioning effectively, optimizing API performance, monitoring and analyzing API usage, and providing real-world examples of API projects.
+  <br>
+  [Restful Api →](https://github.com/aienx/python-archive)
+- Version control: Proficient in Git, experienced with branching strategies and collaboration, knowledgeable in Git workflows, 
+  integration with other tools, and documentation practices, personal projects and contributions.
+- Testing and degugging: Testing and debugging with expertise in test automation, unit testing, debugging techniques, bug tracking, 
+  CI/CD integration, and test case design.
+- Backend Security: Implementing secure coding practices, authentication/authorization mechanisms, data encryption, secure APIs, 
+  vulnerability assessment, compliance, secure session management, configuration hardening, threat modeling, and incident response.
+- Dep and DevOps: Deployment and DevOps, cloud platforms, infrastructure automation, containerization,
+  CI/CD pipelines, monitoring, security, and collaboration.
+  <br>
+  [Cloud DevOps →](https://github.com/aienx/cloud-devops)
+
+### Web Frameworks Project: URL Shortening / Flask python
 
 ![Project Name](https://github.com/aienx/backend/blob/main/url.png)
 
 This is a URL shortening web application built with Python Flask. It utilizes the Bitly API for shortening long URLs.
 
-## Features
+#### Features
 
 - Shorten long URLs to compact, easy-to-share links.
 - Track click statistics for each shortened link.
 - Easy-to-use web interface.
 
-## Technologies Used
+#### Technologies Used
 
 - Python Flask: A micro web framework for building web applications in Python.
 - Bitly API: A URL shortening service that provides an API for programmatic access.
 
-## Setup Instructions
+#### Setup Instructions
 
 1. Clone the repository:
    ```shell
