@@ -13,13 +13,13 @@ Collection of backend and api projects to demonstrate skill sets, knowledge and 
   [Python Archive →](https://github.com/aienx/python-archive)
 - Web framworks: web frameworks skillsets including Flask, Django, and React, with demonstrated experience in building scalable and efficient web 
   applications, utilizing advanced features and integrations, and leveraging powerful tools and libraries within each framework.
-- Database: database development, DBMS (MySQL, PostgreSQL, Oracle).
   <br>
   [Frameworks Prjs →](https://github.com/aienx/python-archive)
+- Database: database development, DBMS (MySQL, PostgreSQL, Oracle).
 - Restful APi's: Developing intuitive and well-structured APIs, documenting, integrating with third-party APIs, implementing API security measures,
   managing API versioning effectively, optimizing API performance, monitoring and analyzing API usage, and providing real-world examples of API projects.
   <br>
-  [Restful Api →](https://github.com/aienx/python-archive)
+  [Restful Api →](./restfulapi.md)
 - Version control: Proficient in Git, experienced with branching strategies and collaboration, knowledgeable in Git workflows, 
   integration with other tools, and documentation practices, personal projects and contributions.
 - Testing and degugging: Testing and debugging with expertise in test automation, unit testing, debugging techniques, bug tracking, 
@@ -68,68 +68,27 @@ This is a URL shortening web application built with Python Flask. It utilizes th
 7.
 [View Project](link-to-project1)
 
-# API Endpoints
-The web application provides the following API endpoints:
-
-## Shorten URL
-
- - URL: /api/shorten
-
- - Method: POST
-
- - Request Payload:
- ```
-  {
-    "url": "https://www.example.com/very-long-url-with-lots-of-characters"
-  } 
-  ```
-## Response
- ```
- {
-    "original_url": "https://www.example.com/very-long-url-with-lots-of-characters",
-    "shortened_url": "https://bit.ly/abcd123",
-    "clicks": 0
-  }
-  ```
-  
-## Click Statistics
-  URL: /api/stats/<shortened_url_id>
-
-  Method: GET
-
-  Response:
-  ```
-  {
-    "original_url": "https://www.example.com/very-long-url-with-lots-of-characters",
-    "shortened_url": "https://bit.ly/abcd123",
-    "clicks": 10
-}
-```
-
-# License
- This project is licensed under the MIT License. See the LICENSE file for more details.
-
-## Project 2: Personal Project ( 3D Shop v1 )
+### Web Frameworks Project: Personal Project ( Blog Platform )
 
 ![Project Name](https://github.com/aienx/backend/blob/main/blog.png)
 
-# Blog Website
+## Blog Website
 
 This is a simple blog website built with Python Flask and a personal API created using the npoint platform.
 
-## Installation
+### Installation
 
 1. Clone the repository: `git clone https://github.com/username/blog-website.git`
 2. Navigate to the project directory: `cd blog-website`
 3. Install the required dependencies: `pip install -r requirements.txt`
 
-## Usage
+### Usage
 
 1. Set up the environment variables required for the Flask application.
 2. Run the Flask application: `python app.py`
 3. Open your web browser and visit `http://localhost:5000` to access the blog website.
 
-## Features
+### Features
 
 - User registration and authentication system.
 - Create, read, update, and delete blog posts.
@@ -137,11 +96,7 @@ This is a simple blog website built with Python Flask and a personal API created
 - View individual blog posts and leave comments.
 - API endpoints for accessing blog posts and comments.
 
-## API Documentation
-
-For detailed API documentation, please refer to the [API Documentation](api-docs.md) file.
-
-## Technologies Used
+### Technologies Used
 
 - Python
 - Flask
@@ -149,10 +104,10 @@ For detailed API documentation, please refer to the [API Documentation](api-docs
 - HTML/CSS
 - JavaScript
 
-## Contributing
+### Contributing
 
 Contributions are welcome! If you'd like to contribute to the project, please follow the guidelines in [CONTRIBUTING.md](CONTRIBUTING.md).
 
-## License
+### License
 
 This project is licensed under the [MIT License](LICENSE).
