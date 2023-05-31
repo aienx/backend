@@ -7,11 +7,11 @@ Collection of backend and api projects to demonstrate skill sets, knowledge and 
 
 ## Contents
 
-- Programming language: proficient in Python language, web frameworks (such as Django and Flask), web scraping, data analysis, machine learning,
+- Programming language: programming in Python language, python web frameworks (Django and Flask), web scraping, data analysis, machine learning,
   scripting and automation, API development, testing and debugging, database integration, collaboration using version control, and problem-solving.
   <br>
   [Python Archive →](https://github.com/aienx/python-archive)
-- Web framworks: web frameworks skillsets including Flask, Django, and React, with demonstrated experience in building scalable and efficient web 
+- Web framworks: working with web frameworks including Flask, Django, and React, with demonstrated experience in building scalable and efficient web 
   applications, utilizing advanced features and integrations, and leveraging powerful tools and libraries within each framework.
   <br>
   [Frameworks Prjs →](./frameworks.md)
